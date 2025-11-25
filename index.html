@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@latest/dist/flowbite.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>HealNet</title>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+
+    <nav class="bg-white fixed w-full z-20 top-0 start-0">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="./images/logo.png" class="h-10" alt="Flowbite Logo">
+                <span
+                    class="self-center text-2xl text-heading font-bold whitespace-nowrap text-[#0069AB] transition-all duration-700 ease-in-out transform hover:scale-110 hover:text-shadow-xl ">HealNet</span>
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <button type="button"
+                    class="btn text-white bg-gradient-to-r from-[#A7E2FF] to-[#0095DE] w-full  focus:ring-4 focus:ring-brand-medium shadow-xs font-bold leading-5 rounded-[5px] text-md px-10 py-3 focus:outline-none transition-all duration-700 ease-in-out transform hover:scale-110 hover:shadow-xl">Join
+                    us</button>
+                <button data-collapse-toggle="navbar-sticky" type="button"
+                    class="btn inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
+                    aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                            d="M5 7h14M5 12h14M5 17h14" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul
+                    class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-default rounded-base bg-neutral-secondary-soft md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-neutral-primary">
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-[#3D3D3D] hover:text-[#0069AB] bg-brand rounded-sm md:bg-transparent md:text-fg-brand md:p-0 transition-all duration-700 ease-in-out transform hover:scale-110 hover:text-shadow-xl"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#services"
+                            class="block py-2 px-3 text-[#3D3D3D] hover:text-[#0069AB] rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent transition-all duration-700 ease-in-out transform hover:scale-110 hover:text-shadow-xl">Services</a>
+                    </li>
+                    <li>
+                        <a href="#findDoctors"
+                            class="block py-2 px-3 text-[#3D3D3D] hover:text-[#0069AB] rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent transition-all duration-700 ease-in-out transform hover:scale-110 hover:text-shadow-xl">Find
+                            Doctors</a>
+                    </li>
+                    <li>
+                        <a href="#aboutUs"
+                            class="block py-2 px-3 text-[#3D3D3D] hover:text-[#0069AB] rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent transition-all duration-700 ease-in-out transform hover:scale-110 hover:text-shadow-xl">About
+                            us</a>
+                    </li>
+                    <li>
+                        <a href="#blog"
+                            class="block py-2 px-3 text-[#3D3D3D] hover:text-[#0069AB] rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent transition-all duration-700 ease-in-out transform hover:scale-110 hover:text-shadow-xl">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#contact"
+                            class="block py-2 px-3 text-[#3D3D3D] hover:text-[#0069AB] rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent transition-all duration-700 ease-in-out transform hover:scale-110 hover:text-shadow-xl">Contact
+                            us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+
+    <section class="text-gray-600 body-font lg:px-[100px] mt-10 relative mx-auto max-w-screen-2xl">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-start ">
+                <h1 class="title-font lg:text-5xl text-4xl mb-4 font-bold text-gray-900 leading-tight">Your
+                    <span
+                        class="bg-gradient-to-r from-[#0179B4] to-[#88D8FF] bg-clip-text text-transparent">trusted</span>
+                    <span
+                        class="bg-gradient-to-r from-[#0179B4] to-[#0179B4] bg-clip-text text-transparent">partner</span>
+                    <br>
+                    in digital healthcare.
+                </h1>
+                <p class="mb-8 leading-relaxed text-[#4F4F4F] text-md lg:text-lg">
+                    <span class="text-[#0084D4] font-semibold">Empowering Your Health at Every Step.</span>
+                    Experience personalized medical care from the comfort of your home. Connect with
+                    <span class="text-[#0084D4] font-semibold">certified doctors, </span>
+                    or manage prescriptions, and schedule appointments with ease. Ready to take control of your health?
+                    <span class="text-[#0084D4] font-semibold"> Get Started </span> or Book an Appointment today.
+                </p>
+                <div class="flex w-full md:justify-start items-center">
+                    <button
+                        class="btn inline-flex items-center gap-1 text-white font-semibold bg-gradient-to-r from-[#A7E2FF] to-[#0095DE] border-0 py-2 lg:px-10 lg:py-3 px-1 text-sm md:px-10 rounded-lg text-base lg:text-xl transition-all duration-700 ease-in-out transform hover:scale-110 hover:shadow-xl z-20 relative">
+                        Book an appointment
+                        <img src="./images/buttonIcon.png" class="w-5 h-5 sm:w-6 sm:h-6 mt-1" alt="" />
+                    </button>
+                </div>
+                <p class="text-sm mt-10 text-gray-500 mb-8 w-full">Trusted by millions across the globe:</p>
+                <div class="flex lg:flex-row gap-2 **z-20** relative">
+                    <img class="lg:w-8 md:w-6 w-8 **p-1** mb-4 lg:mb-0 md:mr-0 lg:mr-6 hover:bg-gradient-to-r from-[#A7E2FF] to-[#0095DE] rounded-sm transition-all duration-700 ease-in-out transform hover:scale-110 hover:shadow-xl z-20"
+                        src="./images/icon1.png" alt="company logo">
+                    <img class="lg:w-8 md:w-6 w-8 **p-1** mb-4 lg:mb-0 md:mr-0 lg:mr-6 hover:bg-gradient-to-r from-[#A7E2FF] to-[#0095DE] rounded-sm transition-all duration-700 ease-in-out transform hover:scale-110 hover:shadow-xl z-20"
+                        src="./images/icon2.png" alt="company logo">
+                    <img class="lg:w-8 md:w-6 w-8 **p-1** mb-4 lg:mb-0 md:mr-0 lg:mr-6 hover:bg-gradient-to-r from-[#A7E2FF] to-[#0095DE] rounded-sm transition-all duration-700 ease-in-out transform hover:scale-110 hover:shadow-xl z-20"
+                        src="./images/icon3.png" alt="company logo">
+                    <img class="lg:w-8 md:w-6 w-8 **p-1** mb-4 lg:mb-0 md:mr-0 lg:mr-6 hover:bg-gradient-to-r from-[#A7E2FF] to-[#0095DE] rounded-sm transition-all duration-700 ease-in-out transform hover:scale-110 hover:shadow-xl z-20"
+                        src="./images/icon4.png" alt="company logo">
+                    <img class="lg:w-8 md:w-6 w-8 **p-1** mb-4 lg:mb-0 md:mr-0 lg:mr-6 hover:bg-gradient-to-r from-[#A7E2FF] to-[#0095DE] rounded-sm transition-all duration-700 ease-in-out transform hover:scale-110 hover:shadow-xl z-20"
+                        src="./images/icon5.png" alt="company logo">
+                    <img class="lg:w-8 md:w-6 w-8 **p-1** mb-4 lg:mb-0 md:mr-0 lg:mr-6 hover:bg-gradient-to-r from-[#A7E2FF] to-[#0095DE] rounded-sm transition-all duration-700 ease-in-out transform hover:scale-110 hover:shadow-xl z-20"
+                        src="./images/icon6.png" alt="company logo">
+                </div>
+            </div>
+            <div
+                class=" lg:w-[700px] w-[400px] md:w-[600px] transition-all duration-700 ease-in-out transform hover:scale-110 hover:text-shadow-xl ">
+                <img class="object-cover object-center rounded w-full" alt="hero" src="./images/doc1.png">
+            </div>
+            <img src="./images/herodesign.png" alt=""
+                class="absolute inset-0 w-full z-0 lg:top-[350px] hidden lg:block **pointer-events-none**" />
+        </div>
+    </section>
+
+    <!-- Esily book container -->
+    <div class="flex justify-center items-center ">
+
+        <div
+            class="booking-container bg-white p-8 md:p-10 rounded-xl max-w-6xl w-full border border-[#00A4F4] shadow-lg z-10 transition-all duration-700 ease-in-out transform hover:scale-110 hover:shadow-xl">
+
+            <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-6">
+                Easily book an appointment in 3 simple steps.
+            </h2>
+
+            <form class="grid grid-cols-1 md:grid-cols-4 gap-6 items-end">
+
+                <div class="md:col-span-1">
+                    <label for="email" class="flex items-center text-sm font-medium text-gray-600 mb-2">
+                        <svg class="w-5 h-5 text-[#00A4F4] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                        Email Address
+                    </label>
+                    <input type="email" id="email" placeholder="Enter Your Email Address"
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-gray-700 placeholder-gray-400">
+                </div>
+
+                <div class="md:col-span-1">
+                    <label for="contact" class="flex items-center text-sm font-medium text-gray-600 mb-2">
+                        <svg class="w-5 h-5 text-[#00A4F4] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.128a11.042 11.042 0 005.516 5.516l1.128-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-11A13 13 0 013 8V5z">
+                            </path>
+                        </svg>
+                        Contact Number
+                    </label>
+                    <input type="tel" id="contact" placeholder="Enter Your Contact Number"
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-gray-700 placeholder-gray-400">
+                </div>
+
+                <div class="md:col-span-1">
+                    <label for="date" class="flex items-center text-sm font-medium text-gray-600 mb-2">
+                        <svg class="w-5 h-5 text-[#00A4F4] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                        Date of Appointment
+                    </label>
+                    <input type="text" id="date" placeholder="Select Date of Appointment" onfocus="(this.type='date')"
+                        onblur="if(!this.value)this.type='text'"
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-gray-700 placeholder-gray-400">
+                </div>
+
+                <div
+                    class="md:col-span-1 transition-all duration-700 ease-in-out transform hover:scale-110 hover:shadow-xl">
+                    <button type="submit"
+                        class="w-full bg-[#00A4F4] hover:bg-[#0389CB] text-white font-medium py-3 rounded-lg flex items-center justify-center transition duration-200 shadow-md">
+                        Book Now
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- cards section -->
+    <section id="services" class="py-16 md:py-24 relative overflow-hidden">
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-light text-[#3D3D3D] font-semibold">
+                    Top <span
+                        class="font-semibold bg-gradient-to-r from-[#0179B4] to-[#88D8FF] bg-clip-text text-transparent">services</span>
+                    we offer
+                </h2>
+                <p class="mt-4 max-w-3xl mx-auto text-[#B0B0B0] text-base md:text-lg leading-relaxed">
+                    In today's fast-paced world, your health deserves the utmost attention and convenience. That's why
+                    HealNet offers a suite of integrated services designed to cater to your healthcare needs digitally.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-5xl mx-auto">
+
+                <div
+                    class="service-card bg-white p-10  shadow-xl lg:col-span-2 md:row-span-2 flex flex-col justify-between transition-all duration-700 ease-in-out transform hover:scale-110 ">
+                    <div>
+                        <div class="text-blue-600 mb-4">
+                            <img src="./images/Frame 5.png" alt="icon" class="w-8 h-8">
+                        </div>
+                        <h3 class="text-xl font-semibold text-[#0069AB] mb-3">Online Consultations</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Consult with top doctors across various specialties via video or chat communication. It's
+                            totally secure, private, and convenient. Choose the best time for an in-person visit with
+                            our easy-to-use scheduling system, or proceed with our online consultation.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="service-card bg-white p-10  shadow-xl lg:row-span-2 transition-all duration-700 ease-in-out transform hover:scale-110 ">
+                    <div class="flex flex-col items-start">
+                        <div class="text-blue-600 mr-4 flex-shrink-0 mt-1 mb-4 leading-tight">
+                            <img src="./images/Frame 5 (1).png" alt="icon" class="w-8 h-8">
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-[#0069AB] mb-2">Booking Appointments</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Choose the best time for an in-person visit with our easy-to-use scheduling system, or
+                                proceed with our online consultation features.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="service-card bg-white p-6 shadow-xl transition-all duration-700 ease-in-out transform hover:scale-110 ">
+                    <div class="flex flex-col items-start">
+                        <div class="text-blue-600 mr-4 flex-shrink-0 mt-1 mb-4 leading-tight">
+                            <img src="./images/Frame 5 (2).png" alt="icon" class="w-8 h-8">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-[#0069AB] mb-2">Prescriptions</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Receive and renew prescriptions digitally after your consultation with our specialists.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="service-card bg-white p-6   shadow-xl transition-all duration-700 ease-in-out transform hover:scale-110 ">
+                    <div class="flex flex-col items-start">
+                        <div class="text-blue-600 mr-4 flex-shrink-0 mt-1 mb-4 leading-tight">
+                            <img src="./images/Frame 5 (3).png" alt="icon" class="w-8 h-8">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-[#0069AB] mb-2">Medical Notes</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Obtain necessary medical notes for work or school with only a few clicks of hassle.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="service-card bg-white p-6 shadow-xl transition-all duration-700 ease-in-out transform hover:scale-110 ">
+                    <div class="flex flex-col items-start ">
+                        <div class="text-blue-600 mr-4 flex-shrink-0 mt-1 mb-4 leading-tight">
+                            <img src="./images/Frame 5 (4).png" alt="icon" class="w-8 h-8">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-[#0069AB] mb-2">Medicine Refills</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Skip the pharmacy queues and save time + energy by ordering medicine refills online.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="text-gray-600 body-font px-30 mx-auto">
+        <div class="flex flex-col justify-center items-center text-center mb-16">
+            <h1 class="text-4xl font-bold">How our <span class="gradient-heading font-bold">platform</span> works</h1>
+            <p class="para-text mt-4 text-gray-600 max-w-2xl leading-relaxed">Navigating your healthcare journey with
+                HealNet is seamless. Just follow these steps mentioned below to proceed with your selected services. You
+                can also see our FAQ section for more guidance:</p>
+        </div>
+
+        <div class="container px-5 py-8 mx-auto flex flex-wrap ">
+            <div class="flex flex-wrap w-full items-start">
+
+                <div class="lg:w-2/5 md:w-1/2 md:pr-16 md:py-6">
+
+                    <div class="flex relative pb-12">
+                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                            <div class="h-full w-1 bg-blue-200 pointer-events-none"></div>
+                        </div>
+                        <div
+                            class="bg-gradient flex-shrink-0 w-10 h-10 rounded-full bg-blue-500 inline-flex items-center justify-center text-white relative z-10 font-bold text-xl">
+                            1
+                        </div>
+                        <div class="flex-grow pl-6">
+                            <h2 class="title-font text-2xl font-semibold text-gray-900 mb-1 tracking-wider">Create Your
+                                Profile</h2>
+                            <p class="leading-relaxed text-gray-700">Sign up and fill in your medical history securely.
+                                Setting up your profile this way would ensure that you stay up-to-date with your medical
+                                processes.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex relative pb-12 ">
+                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                            <div class=" h-full w-1 bg-blue-200 pointer-events-none"></div>
+                        </div>
+                        <div
+                            class="bg-gradient flex-shrink-0 w-10 h-10 rounded-full bg-blue-500 inline-flex items-center justify-center text-white relative z-10 font-bold text-xl">
+                            2
+                        </div>
+                        <div class="flex-grow pl-6">
+                            <h2 class="title-font text-2xl font-semibold text-gray-900 mb-1 tracking-wider">Choose Your
+                                Service</h2>
+                            <p class="leading-relaxed text-gray-700">Select from our range of services and book a
+                                consultation. Booking a consultation with HealNet is fairly simple and straight-forward.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class=" flex relative">
+                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                        </div>
+                        <div
+                            class="bg-gradient flex-shrink-0 w-10 h-10 rounded-full bg-blue-500 inline-flex items-center justify-center text-white relative z-10 font-bold text-xl">
+                            3
+                        </div>
+                        <div class="flex-grow pl-6">
+                            <h2 class="title-font text-2xl font-semibold text-gray-900 mb-1 tracking-wider">Meet Your
+                                Doctor</h2>
+                            <p class="leading-relaxed text-gray-700">Have a virtual consultation with one of our
+                                certified specialists, or go for a physical visit to the doctor in case you opted for a
+                                physical check-up.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="lg:w-[500px] md:w-1/2 md:mt-0 mt-10 relative flex justify-center items-center">
+
+                    <div
+                        class="relative lg:left-[200px] transition-all duration-700 ease-in-out transform hover:scale-110">
+                        <img class="lg:w-[600px] w-[500px]" src="./images/Group 32.png" alt="Team of Specialists">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Patient Testimonials -->
+    <section class="testimonials-section">
+        <header class="section-header">
+            <h1 class="gradient-heading font-bold text-4xl">Patient Testimonials:</h1>
+            <h2 class="sub-title">Hear from Those We've Cared For</h2>
+            <p class="description">Discover the difference we make through the voices of those we've served:</p>
+        </header>
+
+        <div class="content-grid">
+            <div class="card testimonial-card transition-all duration-700 ease-in-out transform hover:scale-110">
+                <div class="card-content">
+                    <img src="./images/test1.png" alt="Linda A." class="profile-img">
+                    <p class="quote">"After my knee surgery, the convenience of online consultations made my recovery
+                        smoother than I could have imagined."</p>
+                </div>
+                <span class="author">- Linda A.</span>
+            </div>
+
+            <div class="card testimonial-card transition-all duration-700 ease-in-out transform hover:scale-110">
+                <div class="card-content">
+                    <img src="./images/test2.png" alt="Henry B." class="profile-img">
+                    <p class="quote">"Managing chronic conditions like diabetes requires a lot of vigilance, but the
+                        medicine refill system has simplified my life."</p>
+                </div>
+                <span class="author">- Henry B.</span>
+            </div>
+
+            <div class="stats-row">
+                <div class="stat-item">
+                    <span class="gradient-heading stat-number">10,000+</span>
+                    <span class="stat-label">Successful Consultations</span>
+                </div>
+                <div class="stat-item">
+                    <span class="gradient-heading stat-number">2,500+</span>
+                    <span class="stat-label">Healthcare Professionals</span>
+                </div>
+                <div class="stat-item">
+                    <span class="gradient-heading stat-number">98%</span>
+                    <span class="stat-label">Patient Satisfaction Rate</span>
+                </div>
+                <div class="stat-item">
+                    <span class="gradient-heading stat-number">200+</span>
+                    <span class="stat-label">Top Specialists</span>
+                </div>
+            </div>
+
+            <div class="card testimonial-card transition-all duration-700 ease-in-out transform hover:scale-110">
+                <div class="card-content">
+                    <img src="./images/test3.png" alt="Joshua T." class="profile-img">
+                    <p class="quote">"The prescription refill system is a game-changer for managing my diabetes. It's
+                        really efficient and completely hassle-free."</p>
+                </div>
+                <span class="author">- Joshua T.</span>
+            </div>
+
+            <div class="card testimonial-card transition-all duration-700 ease-in-out transform hover:scale-110">
+                <div class="card-content">
+                    <img src="./images/test4.png" alt="Samantha K." class="profile-img">
+                    <p class="quote">"Finding a doctor who really understands all of my health needs has never been
+                        easier. This platform has changed my life."</p>
+                </div>
+                <span class="author">- Samantha K.</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Master of Medicine -->
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+    <div class="text-center mb-16">
+        <h1 class="gradient-heading text-4xl font-bold">
+            Masters of Medicine:
+        </h1>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-700 mt-2">
+            Meet our team of specialists
+        </h2>
+        <p class="mt-4 text-gray-600 max-w-3xl mx-auto text-sm sm:text-base">
+            Our team of specialists is at the forefront of medical innovation. Each specialist brings a unique
+            blend of expertise, empathy, and experience.
+        </p>
+    </div>
+
+    <main class="space-y-20 flex flex-col items-center">
+
+        <!-- Specialist 1 (Image Left + Text Right) -->
+    <div class="specialist-card text-white w-full lg:w-[900px] rounded-xl">
+    <div class="flex flex-col lg:flex-row items-center gap-8">
+
+        <!-- Image inside the blue card -->
+        <div class="w-full lg:w-1/3">
+            <img src="./images/master-doc1.png" 
+                class="w-full object-cover rounded-xl" 
+                alt="Dr Sarah" />
+        </div>
+
+        <!-- Text -->
+        <div class="w-full lg:w-2/3">
+            <h3 class="text-xl sm:text-2xl font-bold mb-2">
+                Dr. Sarah Johnson (Cardiologist)
+            </h3>
+            <p class="text-sm sm:text-base mt-3 mb-6 leading-relaxed">
+                Heart health is Dr. Johnson's passion. Her approach to cardiology integrates
+                cutting-edge technology with compassionate care.
+            </p>
+            <a href="#" class="book-appointment-btn">
+                Book appointment <span class="ml-2 text-xl align-middle">📞</span>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<!-- Specialist 2 (Image Right + Text Left) -->
+    <div class="specialist-card text-white lg:w-[900px] w-full rounded-xl">
+    <div class="flex flex-col lg:flex-row items-center gap-8">
+
+        <!-- Image inside the blue card -->
+        <div class="w-full lg:w-1/3">
+            <img src="./images/master-doc2.png" 
+                class="w-full object-cover rounded-xl" 
+                alt="Dr Sarah" />
+        </div>
+
+        <!-- Text -->
+        <div class="w-full lg:w-2/3">
+            <h3 class="text-xl sm:text-2xl font-bold mb-2">
+                Dr. Mark Lee (Dermatologist)
+            </h3>
+            <p class="text-sm sm:text-base mt-3 mb-6 leading-relaxed">
+                Dr. Lee is a visionary in dermatology, known for precision, gentle treatment, 
+                and patient-centered care.
+            </p>
+            <a href="#" class="book-appointment-btn">
+                Book appointment <span class="ml-2 text-xl align-middle">📞</span>
+            </a>
+        </div>
+
+    </div>
+</div>
+</main>
+</div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
